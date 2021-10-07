@@ -1,9 +1,11 @@
 package ar.edu.unlam.eva01;
 
-public class Lacteos extends Producto{
+import java.util.Date;
 
-	public Lacteos(String nombre, Double precio) {
-		super(nombre, precio);		
+public class Lacteos extends Perecedero{
+
+	public Lacteos(String nombre, Double precio, Date fechaDeVencimiento) {
+		super(nombre, precio, fechaDeVencimiento);		
 	}
 
 }

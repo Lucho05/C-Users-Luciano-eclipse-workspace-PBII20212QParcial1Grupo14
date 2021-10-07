@@ -1,9 +1,11 @@
 package ar.edu.unlam.eva01;
 
-public class Fresco extends Producto {
+import java.util.Date;
 
-	public Fresco(String nombre, Double precio) {
-		super(nombre, precio);
+public class Fresco extends Perecedero {
+
+	public Fresco(String nombre, Double precio, Date fechaDeVencimiento) {
+		super(nombre, precio, fechaDeVencimiento);
 		
 	}
 

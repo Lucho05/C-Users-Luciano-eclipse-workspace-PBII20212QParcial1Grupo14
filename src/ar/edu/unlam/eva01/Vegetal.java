@@ -1,9 +1,11 @@
 package ar.edu.unlam.eva01;
 
-public class Vegetal extends Producto {
+import java.util.Date;
 
-	public Vegetal(String nombre, Double precio) {
-		super(nombre, precio);
+public class Vegetal extends Perecedero {
+
+	public Vegetal(String nombre, Double precio, Date fechaDeVencimiento) {
+		super(nombre, precio, fechaDeVencimiento);
 		
 	}
 
