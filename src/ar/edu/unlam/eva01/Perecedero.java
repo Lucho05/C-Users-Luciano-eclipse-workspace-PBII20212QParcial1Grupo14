@@ -1,21 +1,19 @@
 package ar.edu.unlam.eva01;
 
-import java.util.Date;
-
 public abstract class Perecedero extends Producto{
 	
-	private Date fechaDeVencimiento;
+	private String fechaDeVencimiento;
 
-	public Perecedero(String nombre, Double precio, Date fechaDeVencimiento) {
+	public Perecedero(String nombre, Double precio, String fechaDeVencimiento) {
 		super(nombre, precio);
 		this.fechaDeVencimiento = fechaDeVencimiento;
 	}
 
-	public Date getFechaDeVencimiento() {
+	public String getFechaDeVencimiento() {
 		return fechaDeVencimiento;
 	}
 
-	public void setFechaDeVencimiento(Date fechaDeVencimiento) {
+	public void setFechaDeVencimiento(String fechaDeVencimiento) {
 		this.fechaDeVencimiento = fechaDeVencimiento;
 	}
 
