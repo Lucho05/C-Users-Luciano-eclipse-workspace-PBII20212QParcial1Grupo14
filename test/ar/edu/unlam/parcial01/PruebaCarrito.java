@@ -1,4 +1,4 @@
-package ar.edu.unlam.eva01;
+package ar.edu.unlam.parcial01;
 
 import static org.junit.Assert.*;
 
@@ -6,6 +6,13 @@ import java.util.Date;
 import java.util.HashSet;
 
 import org.junit.Test;
+
+import ar.edu.unlam.parcial01.Bebida;
+import ar.edu.unlam.parcial01.Carrito;
+import ar.edu.unlam.parcial01.Descuento;
+import ar.edu.unlam.parcial01.Lacteos;
+import ar.edu.unlam.parcial01.Producto;
+import ar.edu.unlam.parcial01.Vegetal;
 
 public class PruebaCarrito {
 
@@ -20,13 +27,18 @@ public class PruebaCarrito {
 	}
 
 	@Test
-	public void testQueVerificaTenerElCarritoConProducto() {
+	public void testQueVerificaQueSePuedeAgregaroQuitarProducto() {
 		Carrito dia = new Carrito(null);
 
 		Producto zanahoria = new Vegetal("Zanahorias", 75.0, "25/12/2021");
 		Producto papa = new Vegetal("Papa Blanca", 160.0, "25/12/2021");
+		Producto cremaDeLeche = new Lacteos("Crema De Leche", 200.0, "25/12/2021");
+		
 		dia.agregarProducto(papa);
 		dia.agregarProducto(zanahoria);
+		dia.agregarProducto(cremaDeLeche);
+		dia.eliminarProducto(zanahoria);
+		
 		Integer valorEsperado = 2;
 		Integer valorObtenido = dia.obtenerLaCantidadDeProductosEnElCarrito();
 
@@ -66,11 +78,11 @@ public class PruebaCarrito {
 		Descuento treintaPorCientoAPartirDeTresUnidades = new Descuento(cocacola, 3, 0.3);
 		Descuento veintePorCientoAPartirDeDosUnidades = new Descuento(schneider, 2, 0.2);
 
-		HashSet<Descuento> productosEnPromocion = new HashSet<Descuento>();
-		productosEnPromocion.add(treintaPorCientoAPartirDeTresUnidades);
-		productosEnPromocion.add(veintePorCientoAPartirDeDosUnidades);
+		HashSet<Descuento> descuentos = new HashSet<Descuento>();
+		descuentos.add(veintePorCientoAPartirDeDosUnidades);
+		descuentos.add(treintaPorCientoAPartirDeTresUnidades);
 
-		Carrito dia = new Carrito(productosEnPromocion);
+		Carrito dia = new Carrito(descuentos);		
 
 		dia.agregarProducto(anco);
 		dia.agregarProducto(limon);
@@ -84,11 +96,9 @@ public class PruebaCarrito {
 		dia.agregarProducto(schneider);
 		dia.agregarProducto(schneider);
 
-
 		Double valorEsperado = 1111.0;
 		Double valorObtenido = dia.getImporteTotal();
 
 		assertEquals(valorEsperado, valorObtenido);
-
 	}
 }
