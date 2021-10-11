@@ -208,6 +208,7 @@ public class InterfazCarrito {
 		System.out.println("Ingrese (1) para ingresar una bolsa de papas." + "\nPrecio:" + bolsaPapa.getPrecio());
 		System.out.println("Ingrese (2) para ingresar una bolsa de tomates." + "\nPrecio:" + bolsaTomate.getPrecio());
 		System.out.println("Ingrese (3) para ingresar un paquete de espinaca." + "\nPrecio:" + paqueteEspinaca.getPrecio());
+		System.out.println(" ");
 		System.out.println("----------------------------------------");
 		System.out.println("Su gasto hasta el momento es de: " + miCarrito.getImporteTotal());
 		System.out.println("----------------------------------------");
@@ -221,6 +222,7 @@ public class InterfazCarrito {
 		System.out.println("Ingrese (1) para ingresar una caja de leche." + "\nPrecio:" + cajaLeche.getPrecio());
 		System.out.println("Ingrese (2) para ingresar un sache de yogur." + "\nPrecio:" + sacheYogur.getPrecio());
 		System.out.println("Ingrese (3) para ingresar un paquete de manteca." + "\nPrecio:" + paqueteManteca.getPrecio());
+		System.out.println(" ");
 		System.out.println("----------------------------------------");
 		System.out.println("Su gasto hasta el momento es de: " + miCarrito.getImporteTotal());
 		System.out.println("----------------------------------------");
@@ -234,6 +236,7 @@ public class InterfazCarrito {
 		System.out.println("Ingrese (1) para ingresar un botella de agua." + "\nPrecio:" + botellaAgua.getPrecio());
 		System.out.println("Ingrese (2) para ingresar una botella de Coca Cola." + "\nPrecio:" + botellaCocaCola.getPrecio());
 		System.out.println("Ingrese (3) para ingresar una lata de Cerveza." + "\nPrecio:" + lataCerveza.getPrecio() );
+		System.out.println(" ");
 		System.out.println("----------------------------------------");
 		System.out.println("Su gasto hasta el momento es de: " + miCarrito.getImporteTotal());
 		System.out.println("----------------------------------------");
