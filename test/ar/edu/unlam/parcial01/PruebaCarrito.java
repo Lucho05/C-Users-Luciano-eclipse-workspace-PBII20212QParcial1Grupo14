@@ -5,9 +5,9 @@ import java.util.HashSet;
 import org.junit.Test;
 
 public class PruebaCarrito {
-	
+
 	@Test
-	public void modificoEstaLinea() {
+	public void testQueVerificaQueElCarritoNoEstaVacío() {
 		Carrito dia = new Carrito(null);
 
 		Producto lenteja = new Vegetal("Lenteja", 80.0, "25/12/2021");
