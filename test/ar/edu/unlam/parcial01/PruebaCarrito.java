@@ -95,8 +95,10 @@ public class PruebaCarrito {
 		dia.agregarProducto(cocacola);
 		dia.agregarProducto(schneider);
 		dia.agregarProducto(schneider);
+		dia.agregarProducto(schneider);
+		dia.agregarProducto(schneider);
 
-		Double valorEsperado = 1111.0;
+		Double valorEsperado = 1319.0;
 		Double valorObtenido = dia.getImporteTotal();
 
 		assertEquals(valorEsperado, valorObtenido);
