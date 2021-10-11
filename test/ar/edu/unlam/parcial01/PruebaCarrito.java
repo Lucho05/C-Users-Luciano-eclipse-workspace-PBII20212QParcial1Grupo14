@@ -62,10 +62,10 @@ public class PruebaCarrito {
 		Producto limon = new Vegetal("Limón", 20.0, "25/12/2021");
 		Producto leche = new Lacteos("Leche Entera", 120.0, "25/12/2021");
 		Producto yogurt = new Lacteos("Yogurt Cremoso", 40.0, "25/12/2021");
-		Producto cocacola = new Bebida("Coca Cola", 230.0);
+		Producto sevenUp = new Bebida("Coca Cola", 230.0);
 		Producto schneider = new Bebida("Cerveza Schneider Retornable 970 ml.", 130.0);
 
-		Descuento treintaPorCientoAPartirDeTresUnidades = new Descuento(cocacola, 3, 0.3);
+		Descuento treintaPorCientoAPartirDeTresUnidades = new Descuento(sevenUp, 3, 0.3);
 		Descuento veintePorCientoAPartirDeDosUnidades = new Descuento(schneider, 2, 0.2);
 
 		HashSet<Descuento> descuentos = new HashSet<Descuento>();
@@ -80,9 +80,9 @@ public class PruebaCarrito {
 		dia.agregarProducto(yogurt);
 		dia.agregarProducto(yogurt);
 		dia.agregarProducto(yogurt);
-		dia.agregarProducto(cocacola);
-		dia.agregarProducto(cocacola);
-		dia.agregarProducto(cocacola);
+		dia.agregarProducto(sevenUp);
+		dia.agregarProducto(sevenUp);
+		dia.agregarProducto(sevenUp);
 		dia.agregarProducto(schneider);
 		dia.agregarProducto(schneider);
 		dia.agregarProducto(schneider);

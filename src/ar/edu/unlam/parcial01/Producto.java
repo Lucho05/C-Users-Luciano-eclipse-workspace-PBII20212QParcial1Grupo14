@@ -6,7 +6,7 @@ public abstract class Producto {
 	private Double precio;
 
 	public Producto(String nombre, Double precio) {
-		this.nombre= nombre;
+		this.nombre = nombre;
 		this.setPrecio(precio);
 	}
 
@@ -54,5 +54,5 @@ public abstract class Producto {
 	public String toString() {
 		return this.nombre + " - " + this.precio;
 	}
-	
+
 }
