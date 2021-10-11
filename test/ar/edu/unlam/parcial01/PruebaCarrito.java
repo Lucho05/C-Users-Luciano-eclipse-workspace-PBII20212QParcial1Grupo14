@@ -1,23 +1,13 @@
 package ar.edu.unlam.parcial01;
 
 import static org.junit.Assert.*;
-
-import java.util.Date;
 import java.util.HashSet;
-
 import org.junit.Test;
 
-import ar.edu.unlam.parcial01.Bebida;
-import ar.edu.unlam.parcial01.Carrito;
-import ar.edu.unlam.parcial01.Descuento;
-import ar.edu.unlam.parcial01.Lacteos;
-import ar.edu.unlam.parcial01.Producto;
-import ar.edu.unlam.parcial01.Vegetal;
-
 public class PruebaCarrito {
-
+	
 	@Test
-	public void testQueVerificaQueElCarritoNoEstaVacío() {
+	public void modificoEstaLinea() {
 		Carrito dia = new Carrito(null);
 
 		Producto lenteja = new Vegetal("Lenteja", 80.0, "25/12/2021");
